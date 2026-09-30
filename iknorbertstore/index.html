@@ -7,83 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
 </head>
-<body>
+<body data-nav="home" data-page="home">
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="container">
-    <div class="topbar-left">
-      <span><i class="fas fa-map-marker-alt"></i> Head Office: 24-26, 1st Floor, IT IS WELL Plaza, 17, Ola Ayeni Street, Ikeja, Lagos</span>
-      <span><i class="fas fa-phone"></i> 08129963217 | 08129963210</span>
-    </div>
-    <div class="topbar-right">
-      <a href="#"><i class="fas fa-truck"></i> Track Order</a>
-      <a href="#"><i class="fas fa-store"></i> Store Locations</a>
-      <a href="#"><i class="fas fa-user"></i> My Account</a>
-    </div>
-  </div>
-</div>
-
-<!-- HEADER -->
-<header>
-  <div class="container">
-    <div class="header-inner">
-      <div class="logo">
-        <div class="logo-icon">IK</div>
-        <div class="logo-text">
-          <span class="brand">IknorbertStore</span>
-          <span class="tagline">Nigeria's itel Specialist</span>
-        </div>
-      </div>
-      <div class="search-bar">
-        <select>
-          <option>All Products</option>
-          <option>Smartphones</option>
-          <option>Tablets</option>
-          <option>Accessories</option>
-          <option>TVs</option>
-        </select>
-        <input type="text" placeholder="Search itel phones, tablets, accessories..." />
-        <button><i class="fas fa-search"></i></button>
-      </div>
-      <div class="header-actions">
-        <a href="#" class="header-btn">
-          <i class="fas fa-heart"></i>
-          <span>Wishlist</span>
-        </a>
-        <a href="#" class="header-btn" id="cartBtn">
-          <i class="fas fa-shopping-cart"></i>
-          <span>Cart</span>
-          <span class="cart-badge" id="cartCount">0</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- NAV -->
-<nav>
-  <div class="container">
-    <div class="nav-inner">
-      <div class="nav-all-cats">
-        <i class="fas fa-bars"></i> All Categories
-      </div>
-      <div class="nav-links">
-        <a href="#" class="active">Home</a>
-        <a href="#">Smartphones</a>
-        <a href="#">Tablets</a>
-        <a href="#">Smart TVs</a>
-        <a href="#">Accessories</a>
-        <a href="#">Power Banks</a>
-        <a href="#">Earphones</a>
-        <a href="#">Deals</a>
-        <a href="#">About Us</a>
-      </div>
-      <div class="nav-promo"><i class="fas fa-bolt"></i> Flash Sales Today!</div>
-    </div>
-  </div>
-</nav>
+<div id="site-header"></div>
 
 <!-- HERO -->
 <div class="hero-section">
@@ -93,16 +21,16 @@
       <!-- Side Categories -->
       <div class="side-categories">
         <div class="side-cat-header"><i class="fas fa-th-large"></i>&nbsp; Shop by Category</div>
-        <div class="side-cat-item"><span>📱 Smartphones</span><i class="fas fa-chevron-right"></i></div>
-        <div class="side-cat-item"><span>📟 Tablets &amp; Pads</span><i class="fas fa-chevron-right"></i></div>
-        <div class="side-cat-item"><span>📺 Smart TVs</span><i class="fas fa-chevron-right"></i></div>
-        <div class="side-cat-item"><span>🔋 Power Banks</span><i class="fas fa-chevron-right"></i></div>
-        <div class="side-cat-item"><span>🎧 Earphones &amp; Buds</span><i class="fas fa-chevron-right"></i></div>
-        <div class="side-cat-item"><span>🔌 Chargers &amp; Cables</span><i class="fas fa-chevron-right"></i></div>
-        <div class="side-cat-item"><span>📷 Smart Watches</span><i class="fas fa-chevron-right"></i></div>
-        <div class="side-cat-item"><span>🖥️ Laptops</span><i class="fas fa-chevron-right"></i></div>
-        <div class="side-cat-item"><span>🛡️ Phone Cases</span><i class="fas fa-chevron-right"></i></div>
-        <div class="side-cat-item"><span>🔦 Feature Phones</span><i class="fas fa-chevron-right"></i></div>
+        <a class="side-cat-item" href="smartphones.html"><span>📱 Smartphones</span><i class="fas fa-chevron-right"></i></a>
+        <a class="side-cat-item" href="tablets.html"><span>📟 Tablets &amp; Pads</span><i class="fas fa-chevron-right"></i></a>
+        <a class="side-cat-item" href="smart-tvs.html"><span>📺 Smart TVs</span><i class="fas fa-chevron-right"></i></a>
+        <a class="side-cat-item" href="power-banks.html"><span>🔋 Power Banks</span><i class="fas fa-chevron-right"></i></a>
+        <a class="side-cat-item" href="earphones.html"><span>🎧 Earphones &amp; Buds</span><i class="fas fa-chevron-right"></i></a>
+        <a class="side-cat-item" href="chargers.html"><span>🔌 Chargers &amp; Cables</span><i class="fas fa-chevron-right"></i></a>
+        <a class="side-cat-item" href="smart-watches.html"><span>📷 Smart Watches</span><i class="fas fa-chevron-right"></i></a>
+        <a class="side-cat-item" href="laptops.html"><span>🖥️ Laptops</span><i class="fas fa-chevron-right"></i></a>
+        <a class="side-cat-item" href="phone-cases.html"><span>🛡️ Phone Cases</span><i class="fas fa-chevron-right"></i></a>
+        <a class="side-cat-item" href="feature-phones.html"><span>🔦 Feature Phones</span><i class="fas fa-chevron-right"></i></a>
       </div>
 
       <!-- Slider -->
@@ -113,7 +41,7 @@
             <div class="slide-title">itel S25 Ultra<br/>6.78" AMOLED</div>
             <div class="slide-sub">8GB RAM · 256GB Storage · 50MP Camera · Android 14</div>
             <div class="slide-price">₦235,000</div>
-            <a href="#" class="slide-btn">Shop Now →</a>
+            <a href="smartphones.html" class="slide-btn">Shop Now →</a>
           </div>
           <svg class="slide-img" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="10" y="5" width="100" height="190" rx="16" fill="#1e1e2e" stroke="#444" stroke-width="2"/>
@@ -135,7 +63,7 @@
             <div class="slide-title">itel Power 70<br/>10,000mAh Beast</div>
             <div class="slide-sub">6.67" HD+ · 16GB RAM (Fusion) · 18W Fast Charge</div>
             <div class="slide-price">₦124,900</div>
-            <a href="#" class="slide-btn">Shop Now →</a>
+            <a href="smartphones.html" class="slide-btn">Shop Now →</a>
           </div>
           <svg class="slide-img" viewBox="0 0 120 200" fill="none">
             <rect x="10" y="5" width="100" height="190" rx="16" fill="#2a0000" stroke="#880000" stroke-width="2"/>
@@ -157,7 +85,7 @@
             <div class="slide-title">itel S24<br/>108MP Camera</div>
             <div class="slide-sub">6.6" HD+ · 8GB RAM · 256GB · Helio G91</div>
             <div class="slide-price">₦181,000</div>
-            <a href="#" class="slide-btn">Shop Now →</a>
+            <a href="smartphones.html" class="slide-btn">Shop Now →</a>
           </div>
           <svg class="slide-img" viewBox="0 0 120 200" fill="none">
             <rect x="10" y="5" width="100" height="190" rx="16" fill="#222" stroke="#555" stroke-width="2"/>
@@ -188,13 +116,13 @@
           <span class="label">Limited Offer</span>
           <span class="title">itel Pad 2<br/>10.1" Tablet</span>
           <span class="price">₦210,000</span>
-          <a href="#" class="mini-banner-link">Buy Now</a>
+          <a href="tablets.html" class="mini-banner-link">Buy Now</a>
         </div>
         <div class="mini-banner mini-banner-2">
           <span class="label">Hot Deal</span>
           <span class="title">itel A80<br/>Budget Pick</span>
           <span class="price">From ₦89,000</span>
-          <a href="#" class="mini-banner-link">Buy Now</a>
+          <a href="smartphones.html" class="mini-banner-link">Buy Now</a>
         </div>
       </div>
 
@@ -226,34 +154,9 @@
   <div class="container">
     <div class="section-header">
       <div class="section-title">Shop by Category</div>
-      <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+      <a href="search.html" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
     </div>
-    <div class="cat-grid">
-      <div class="cat-card">
-        <div class="cat-icon"><i class="fas fa-mobile-alt"></i></div>
-        <div class="cat-label">Smartphones</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon"><i class="fas fa-tablet-alt"></i></div>
-        <div class="cat-label">Tablets</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon"><i class="fas fa-tv"></i></div>
-        <div class="cat-label">Smart TVs</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon"><i class="fas fa-battery-full"></i></div>
-        <div class="cat-label">Power Banks</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon"><i class="fas fa-headphones"></i></div>
-        <div class="cat-label">Earphones</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon"><i class="fas fa-plug"></i></div>
-        <div class="cat-label">Chargers</div>
-      </div>
-    </div>
+    <div class="cat-grid" id="catGrid"></div>
   </div>
 </div>
 
@@ -262,7 +165,7 @@
   <div class="container">
     <div class="section-header">
       <div class="section-title">Featured Phones</div>
-      <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+      <a href="smartphones.html" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
     </div>
     <div class="product-grid" id="featuredGrid">
       <!-- Products injected by JS -->
@@ -274,7 +177,7 @@
 <div class="section deals-section">
   <div class="container">
     <div class="deals-header">
-      <div class="deals-title"><i class="fas fa-bolt"></i> Deals of the Day</div>
+      <div class="deals-title"><i class="fas fa-bolt"></i> <a href="deals.html">Deals of the Day</a></div>
       <div class="countdown">
         Ends in:
         <div class="countdown-block" id="hours">08</div><span class="countdown-sep">:</span>
@@ -296,7 +199,7 @@
       <h2>100% Authentic itel Products</h2>
       <span>Every device comes with official itel Nigeria warranty. Shop with confidence at IknorbertStore.</span>
       <br/>
-      <a href="#" class="brand-banner-btn">Browse All itel Products</a>
+      <a href="search.html" class="brand-banner-btn">Browse All itel Products</a>
     </div>
     <div class="brand-banner-icons">
       <i class="fas fa-mobile-alt"></i>
@@ -310,7 +213,7 @@
   <div class="container">
     <div class="section-header">
       <div class="section-title">New Arrivals</div>
-      <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+      <a href="new-arrivals.html" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
     </div>
     <div class="product-grid" id="newGrid"></div>
   </div>
@@ -353,164 +256,20 @@
 </div>
 
 <!-- STORE LOCATIONS -->
-<div class="locations-section">
+<div class="locations-section" id="locations">
   <div class="container">
     <div class="section-header">
       <div class="section-title">Our Store Locations</div>
-      <a href="#" class="view-all"><i class="fas fa-map-marked-alt"></i> &nbsp;Find a Store</a>
+      <a href="contact.html#locations" class="view-all"><i class="fas fa-map-marked-alt"></i> &nbsp;Find a Store</a>
     </div>
-    <div class="locations-grid">
-
-      <div class="location-card head-office">
-        <span class="location-badge" style="background:var(--red-dark)">Head Office</span>
-        <div class="location-name"><i class="fas fa-building"></i> Head Office – Ikeja</div>
-        <div class="location-address">Suites 24-26, 1st Floor, IT IS WELL Plaza,<br>17, Ola Ayeni Street, Ikeja, Lagos</div>
-        <div class="location-tel"><i class="fas fa-phone"></i> 08129963217 &nbsp;|&nbsp; 08129963210</div>
-      </div>
-
-      <div class="location-card">
-        <span class="location-badge">Lagos</span>
-        <div class="location-name"><i class="fas fa-store"></i> Lagos Office – Computer Village</div>
-        <div class="location-address">22, Awolowo Road, By Otigba Street,<br>Computer Village, Ikeja, Lagos</div>
-        <div class="location-tel"><i class="fas fa-phone"></i> 08129963211 &nbsp;|&nbsp; 08129963207</div>
-      </div>
-
-      <div class="location-card">
-        <span class="location-badge">Lagos</span>
-        <div class="location-name"><i class="fas fa-store"></i> Ojo Alaba Office</div>
-        <div class="location-address">Shop F501, Beside Union Bank,<br>Alaba Int'l Market, Ojo, Lagos</div>
-        <div class="location-tel"><i class="fas fa-phone"></i> 08129963225</div>
-      </div>
-
-      <div class="location-card">
-        <span class="location-badge">Abuja</span>
-        <div class="location-name"><i class="fas fa-store"></i> Abuja Office</div>
-        <div class="location-address">Shop GBE 4/5, New Banex Plaza, Plot 750,<br>Aminu Kano Crescent, Wuse II, Abuja</div>
-        <div class="location-tel"><i class="fas fa-phone"></i> 08129963214</div>
-      </div>
-
-      <div class="location-card">
-        <span class="location-badge">Kano</span>
-        <div class="location-name"><i class="fas fa-store"></i> Kano Office</div>
-        <div class="location-address">1st Floor, Alada Building, 13, Beirut Road,<br>By Dankoli Plaza, Kano</div>
-        <div class="location-tel"><i class="fas fa-phone"></i> 08129963213</div>
-      </div>
-
-      <div class="location-card">
-        <span class="location-badge">Sokoto</span>
-        <div class="location-name"><i class="fas fa-store"></i> Sokoto Office</div>
-        <div class="location-address">26, Fodio Road, Sokoto, Sokoto State</div>
-        <div class="location-tel"><i class="fas fa-phone"></i> 08129963223</div>
-      </div>
-
-      <div class="location-card">
-        <span class="location-badge">Borno</span>
-        <div class="location-name"><i class="fas fa-store"></i> Maiduguri Office</div>
-        <div class="location-address">Shehu Laminu Way, Opp. Zoo Park,<br>Maiduguri, Borno State</div>
-        <div class="location-tel"><i class="fas fa-phone"></i> 08129963204</div>
-      </div>
-
-      <div class="location-card">
-        <span class="location-badge">Adamawa</span>
-        <div class="location-name"><i class="fas fa-store"></i> Adamawa Office</div>
-        <div class="location-address">Ahmadu Bello Way, Opp. NSCDC,<br>Mubi, Adamawa State</div>
-        <div class="location-tel"><i class="fas fa-phone"></i> 08129963212</div>
-      </div>
-
-      <div class="location-card">
-        <span class="location-badge">Kaduna</span>
-        <div class="location-name"><i class="fas fa-store"></i> Kaduna Office</div>
-        <div class="location-address">Shop No. AFF 01, 1st Floor Bacab Plaza,<br>Adjacent Co-operative Bus, Ahmadu Bello Way, Kaduna</div>
-        <div class="location-tel"><i class="fas fa-phone"></i> 07038883671 &nbsp;|&nbsp; 08108945656</div>
-      </div>
-
-    </div>
+    <div class="locations-grid" id="storesGrid"></div>
   </div>
 </div>
 
-<!-- NEWSLETTER -->
-<div class="newsletter">
-  <div class="container">
-    <h3>Get the Latest itel Deals First</h3>
-    <p>Subscribe to our newsletter and never miss a price drop or new arrival.</p>
-    <div class="newsletter-form">
-      <input type="email" placeholder="Enter your email address..." />
-      <button>Subscribe</button>
-    </div>
-  </div>
-</div>
+<div id="site-footer"></div>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo">
-            <div class="footer-logo-icon">IK</div>
-            <span class="footer-logo-text">IknorbertStore</span>
-          </div>
-          <p class="footer-desc">Nigeria's trusted itel product specialist. We offer 100% authentic itel smartphones, tablets, TVs, and accessories at the best prices. Visit us at Computer Village, Ikeja or shop online.</p>
-          <div class="footer-socials">
-            <a href="#" class="social-btn fb"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-btn tw"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-btn ig"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-btn wa"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">All Products</a></li>
-            <li><a href="#">Deals & Offers</a></li>
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Categories</h4>
-          <ul class="footer-links">
-            <li><a href="#">itel Smartphones</a></li>
-            <li><a href="#">itel Tablets</a></li>
-            <li><a href="#">itel Smart TVs</a></li>
-            <li><a href="#">Power Banks</a></li>
-            <li><a href="#">Earphones & Buds</a></li>
-            <li><a href="#">Phone Accessories</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact Us</h4>
-          <ul class="footer-contact">
-            <li><i class="fas fa-map-marker-alt"></i><span><strong>Head Office:</strong> Suites 24-26, 1st Floor, IT IS WELL Plaza, 17, Ola Ayeni Street, Ikeja, Lagos</span></li>
-            <li><i class="fas fa-phone"></i><span>08129963217, 08129963210</span></li>
-            <li><i class="fas fa-envelope"></i><span>info@iknorbertstore.com</span></li>
-            <li><i class="fas fa-clock"></i><span>Mon–Sat: 8am – 7pm</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="footer-bottom">
-      <span>© 2025 IknorbertStore. All rights reserved. Authorised itel Reseller Nigeria.</span>
-      <div class="payment-icons">
-        <span class="pay-icon">CARD</span>
-        <span class="pay-icon">BANK</span>
-        <span class="pay-icon">USSD</span>
-        <span class="pay-icon">COD</span>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- TOAST -->
-<div class="cart-toast" id="toast">
-  <i class="fas fa-check-circle"></i>
-  <span id="toastMsg">Item added to cart!</span>
-</div>
-
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feature Phones – IknorbertStore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-nav="" data-page="catalog" data-mode="category" data-cats="feature-phones" data-title="Feature Phones" data-desc="Simple, tough phones with days of battery life.">
+
+<div id="site-header"></div>
+
+<div class="page-banner" id="pageBanner"></div>
+
+<div class="catalog-wrap">
+  <div class="container">
+    <div class="catalog-layout">
+      <aside class="side-categories" id="catSidebar"></aside>
+      <main>
+        <div id="dealsTimer"></div>
+        <div class="chips" id="catChips"></div>
+        <div class="catalog-toolbar">
+          <span class="count" id="resultCount"></span>
+          <div class="toolbar-controls">
+            <select id="priceFilter" aria-label="Filter by price">
+              <option value="0-999999999">All prices</option>
+              <option value="0-50000">Under ₦50,000</option>
+              <option value="50000-150000">₦50,000 – ₦150,000</option>
+              <option value="150000-300000">₦150,000 – ₦300,000</option>
+              <option value="300000-999999999">Above ₦300,000</option>
+            </select>
+            <select id="sortBy" aria-label="Sort products">
+              <option value="default">Sort: Featured</option>
+              <option value="popular">Most reviewed</option>
+              <option value="rating">Top rated</option>
+              <option value="discount">Biggest discount</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-grid" id="catalogGrid"></div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<div id="site-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/catalog.js"></script>
+</body>
+</html>

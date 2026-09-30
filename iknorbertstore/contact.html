@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – IknorbertStore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-nav="" data-page="contact">
+
+<div id="site-header"></div>
+
+<div class="page-banner"><div class="container">
+  <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact Us</span></div>
+  <h1>Contact Us</h1><p>Questions, order updates or product advice – we are here to help.</p>
+</div></div>
+
+<div class="about-section" style="background:var(--off-white)">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <ul class="contact-list">
+          <li><i class="fas fa-map-marker-alt"></i><span><strong>Head Office:</strong> Suites 24-26, 1st Floor, IT IS WELL Plaza, 17, Ola Ayeni Street, Ikeja, Lagos</span></li>
+          <li><i class="fas fa-phone"></i><span>08129963217, 08129963210</span></li>
+          <li><i class="fab fa-whatsapp"></i><span><a id="waLink" href="#" target="_blank" rel="noopener">Chat with us on WhatsApp</a></span></li>
+          <li><i class="fas fa-envelope"></i><span id="emailText"></span></li>
+          <li><i class="fas fa-clock"></i><span>Mon–Sat: 8am – 7pm</span></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Send us a message</h3>
+        <label for="cName">Your name</label><input id="cName" required />
+        <label for="cPhone">Phone number</label><input id="cPhone" type="tel" />
+        <label for="cTopic">Topic</label>
+        <select id="cTopic"><option>Product enquiry</option><option>Track my order</option><option>Warranty / after-sales</option><option>Other</option></select>
+        <label for="cMsg">Message</label><textarea id="cMsg" required></textarea>
+        <button type="submit" class="btn-red"><i class="fas fa-paper-plane"></i> Send message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="locations-section" id="locations">
+  <div class="container">
+    <div class="section-header"><div class="section-title">Our Store Locations</div></div>
+    <div class="locations-grid" id="storesGrid"></div>
+  </div>
+</div>
+
+<div id="site-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script>
+  document.getElementById("waLink").href = "https://wa.me/" + STORE_WHATSAPP;
+  document.getElementById("emailText").textContent = STORE_EMAIL;
+  // Opens the visitor's email app with the message filled in (no server needed)
+  document.getElementById("contactForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const body = "Name: " + cName.value + "\nPhone: " + cPhone.value + "\n\n" + cMsg.value;
+    location.href = "mailto:" + STORE_EMAIL + "?subject=" + encodeURIComponent(cTopic.value) + "&body=" + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
